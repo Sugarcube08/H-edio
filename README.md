@@ -91,4 +91,10 @@ Unsupported Formats: Currently, the script only supports .mp3, .wav, and .ogg fo
 ---
 Feel free to customize the repository and use it for your own bulk audio volume adjustments! 😄🎶
 
+---
+## ☕ Support Me
+If you like this project, consider buying me a coffee!
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support%20Me-orange?style=flat-square&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/sugarcube08)
+---
+
 
