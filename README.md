@@ -1,26 +1,84 @@
-<<<<<<< HEAD
-# H-edio
-A Python script to adjust the volume of audio files in a folder. It allows users to increase or decrease volume by a specified decibel amount or percentage. Supports MP3, WAV, OGG formats and processes multiple files in a folder, overwriting them with the adjusted volume.
-=======
-# Audio Volume Adjuster
+# H-Edio: Bulk Audio Volume Adjustment Script 🎶🔊
 
-A Python program to adjust the volume of audio files (MP3, WAV, OGG, etc.) in a folder by a specified amount. You can increase or decrease the volume either by a fixed dB value or by a percentage.
+**H-Edio** is a Python script designed to help you easily **increase or decrease the volume** of audio files in bulk. Whether you're working with `.mp3`, `.wav`, or `.ogg` files, this program allows you to apply a volume adjustment to all audio files in a specified folder, based on a **percentage input**.
 
-## Features
-- Adjust volume of audio files by a fixed dB increase or decrease.
-- Adjust volume based on a percentage (e.g., increase by 50%, decrease by 20%).
-- Process multiple audio files in a folder and overwrite them with the modified versions.
+## 🚀 Features:
+- **Bulk Processing**: Adjust the volume of multiple audio files in a folder at once. 🔄
+- **Custom Volume Adjustment**: Increase or decrease volume by a percentage (e.g., `100` for a 100% increase, `-50` for a 50% decrease). 📈📉
+- **Supports Common Audio Formats**: Works with `.mp3`, `.wav`, and `.ogg` audio files. 🎵
+- **Simple and Easy to Use**: Just input the folder path and the percentage to adjust the volume. 🛠️
 
-## Requirements
+## 🖥️ Requirements:
+- **Python 3.x** 🐍
+- Dependencies listed in the `requirements.txt` file 📦
+- **ffmpeg** (or `libav`) installed on your system for `pydub` to handle various audio formats. 🎬
 
-- Python 3.x
-- [pydub](https://pypi.org/project/pydub/) (for audio processing)
-- [ffmpeg](https://ffmpeg.org/download.html) (for handling various audio formats)
+### 🔧 Installing Required Libraries
+To install the necessary dependencies, use `pip` to install from the `requirements.txt` file:
 
-### Install Dependencies
+```
+pip install -r requirements.txt
+```
+You also need to install FFmpeg for pydub to process audio files correctly. You can download FFmpeg from here and follow the installation instructions for your operating system.
 
-1. Clone this repository or download the code.
-2. Create a virtual environment (optional but recommended):
-   ```bash
-   python -m venv venv
->>>>>>> ffdf812 (Initial commit)
+🚶 How to Use:
+
+1. Clone or Download the Repository 📥
+
+If you haven't already, clone or download the repository.
+```
+git clone http://github.com/sugarcube08/H-Edio
+cd H-Edio
+```
+2. Run the Script ▶️
+
+Run the script using Python:
+```
+python run-edio.py
+```
+3. Provide Input 📝
+
+Folder Path: The script will ask for the path to the folder containing the audio files. 📂
+
+Percentage: Provide the percentage by which you want to adjust the volume (e.g., 100 for a 100% increase, -50 for a 50% decrease). 🎚️
+
+
+Example:
+
+If you want to increase the volume by 50%, you would input 50 📈.
+
+To decrease the volume by 30%, you would input -30 📉.
+
+
+The script will process all compatible audio files in the folder and adjust the volume accordingly. 🎶
+
+🛠️ How It Works:
+
+1. Volume Calculation: The script converts the percentage to decibels (dB). For example:
+
+100% → +6 dB (doubling the volume) 🔊
+
+50% → +3 dB
+
+-50% → -3 dB
+
+
+
+2. Processing: It then loads each audio file, applies the volume change, and saves the modified files back to the same folder. 📁
+
+
+
+🐞 Troubleshooting:
+
+Error: If the script doesn't work correctly, make sure FFmpeg is installed and accessible in your system's PATH. 🔄
+
+Unsupported Formats: Currently, the script only supports .mp3, .wav, and .ogg formats. You can modify the script to add support for other formats if necessary. 🎧
+
+
+
+---
+
+#Made with ❤️ by SugarCube.#
+Feel free to customize the repository and use it for your own bulk audio volume adjustments! 😄🎶
+
+
