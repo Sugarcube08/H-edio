@@ -30,13 +30,22 @@ If you haven't already, clone or download the repository.
 git clone http://github.com/sugarcube08/H-Edio
 cd H-Edio
 ```
-2. Run the Script ▶️
+
+Here's the updated section with the code block included:
+
+2. Installing Required Libraries🔧
+
+To install the necessary dependencies, use pip to install from the requirements.txt file:
+```
+pip install -r requirements.txt
+```
+3. Run the Script ▶️
 
 Run the script using Python:
 ```
 python run-edio.py
 ```
-3. Provide Input 📝
+4. Provide Input 📝
 
 Folder Path: The script will ask for the path to the folder containing the audio files. 📂
 
