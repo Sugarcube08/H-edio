@@ -86,7 +86,7 @@ Unsupported Formats: Currently, the script only supports .mp3, .wav, and .ogg fo
 
 
 ---
-# Made with ❤️ by SugarCube.
+## Made with ❤️ by SugarCube.
 ---
 Feel free to customize the repository and use it for your own bulk audio volume adjustments! 😄🎶
 
